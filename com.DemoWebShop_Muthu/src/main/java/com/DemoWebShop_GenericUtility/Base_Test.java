@@ -57,10 +57,10 @@ public class Base_Test
 	{
 		System.out.println("Lanuch Browser");
 		
-		String browser = fileutility.readDataFromPropertyFile("browserName");
-		String url = fileutility.readDataFromPropertyFile("url");
-		//String browser = System.getProperty("browserName");
-		//String url = System.getProperty("baseUrl");
+		//String browser = fileutility.readDataFromPropertyFile("browserName");
+		//String url = fileutility.readDataFromPropertyFile("url");
+		String browser = System.getProperty("browserName");
+		String url = System.getProperty("baseUrl");
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			driver = new ChromeDriver();
